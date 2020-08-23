@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="174.591221">
+<testcase classname="Login to the Application" name="Login to Application" time="40.966926">
+<system-out><![CDATA[Given Access the url link...................................................passed
+When User enters the login details..........................................passed
+Then User will not get an error message "Username and password did not match or not found".passed
+And User will be able to see Home Page......................................passed
+When Access menu profile....................................................passed
+And Logout from the application.............................................passed
+Then User will be redirected back to login page.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login to the Application" name="Invalid Login to Application" time="133.624295">
+<system-out><![CDATA[Given Access the url link...................................................passed
+When User enters the wrong login details....................................passed
+Then User will be redirected back to login page.............................passed
+And User will get an error message "Username and password did not match or not found".passed
+]]></system-out>
+</testcase>
+</testsuite>

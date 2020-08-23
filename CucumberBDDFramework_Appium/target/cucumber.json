@@ -1,0 +1,202 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 26862726800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Access the url link",
+            "match": {
+              "location": "LoginStep2.User_Enters_Application_Url()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "Login to Application",
+        "description": "",
+        "id": "login-to-the-application;login-to-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5660398200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters the login details",
+            "match": {
+              "location": "LoginStep2.User_enters_login_details()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2003942100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User will not get an error message \"Username and password did not match or not found\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": " not ",
+                  "offset": 9
+                },
+                {
+                  "val": "Username and password did not match or not found",
+                  "offset": 36
+                }
+              ],
+              "location": "LoginStep2.User_Will_Get_Error_Message(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1449698900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User will be able to see Home Page",
+            "match": {
+              "location": "LoginStep2.User_In_Home_Page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1347277200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Access menu profile",
+            "match": {
+              "location": "LoginStep2.Access_menu_profile()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1588164300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Logout from the application",
+            "match": {
+              "location": "LoginStep2.Logout_from_the_application()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2054718000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User will be redirected back to login page",
+            "match": {
+              "location": "LoginStep2.User_In_login_Page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 125283215100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Access the url link",
+            "match": {
+              "location": "LoginStep2.User_Enters_Application_Url()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Invalid Login to Application",
+        "description": "",
+        "id": "login-to-the-application;invalid-login-to-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4954148900,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enters the wrong login details",
+            "match": {
+              "location": "LoginStep2.User_enters_wrong_login_details()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2137985400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User will be redirected back to login page",
+            "match": {
+              "location": "LoginStep2.User_In_login_Page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1248945600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User will get an error message \"Username and password did not match or not found\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": " ",
+                  "offset": 9
+                },
+                {
+                  "val": "Username and password did not match or not found",
+                  "offset": 32
+                }
+              ],
+              "location": "LoginStep2.User_Will_Get_Error_Message(String,String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Login to the Application",
+    "description": "",
+    "id": "login-to-the-application",
+    "keyword": "Feature",
+    "uri": "src/main/java/Feature/login.feature"
+  }
+]

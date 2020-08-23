@@ -1,0 +1,20 @@
+Feature: Login to the Application
+
+  Background:                 [90m# src/main/java/Feature/login.feature:3[0m
+    [32mGiven [0m[32mAccess the url link[0m [90m# LoginStep2.User_Enters_Application_Url()[0m
+
+  Scenario: Login to Application                                                               [90m# src/main/java/Feature/login.feature:6[0m
+    [32mWhen [0m[32mUser enters the login details[0m                                                         [90m# LoginStep2.User_enters_login_details()[0m
+    [32mThen [0m[32mUser will[0m[32m[1m not [0m[32mget an error message "[0m[32m[1mUsername and password did not match or not found[0m[32m"[0m [90m# LoginStep2.User_Will_Get_Error_Message(String,String)[0m
+    [32mAnd [0m[32mUser will be able to see Home Page[0m                                                     [90m# LoginStep2.User_In_Home_Page()[0m
+    [32mWhen [0m[32mAccess menu profile[0m                                                                   [90m# LoginStep2.Access_menu_profile()[0m
+    [32mAnd [0m[32mLogout from the application[0m                                                            [90m# LoginStep2.Logout_from_the_application()[0m
+    [32mThen [0m[32mUser will be redirected back to login page[0m                                            [90m# LoginStep2.User_In_login_Page()[0m
+
+  Background:                 [90m# src/main/java/Feature/login.feature:3[0m
+    [32mGiven [0m[32mAccess the url link[0m [90m# LoginStep2.User_Enters_Application_Url()[0m
+
+  Scenario: Invalid Login to Application                                                  [90m# src/main/java/Feature/login.feature:14[0m
+    [32mWhen [0m[32mUser enters the wrong login details[0m                                              [90m# LoginStep2.User_enters_wrong_login_details()[0m
+    [32mThen [0m[32mUser will be redirected back to login page[0m                                       [90m# LoginStep2.User_In_login_Page()[0m
+    [32mAnd [0m[32mUser will[0m[32m[1m [0m[32mget an error message "[0m[32m[1mUsername and password did not match or not found[0m[32m"[0m [90m# LoginStep2.User_Will_Get_Error_Message(String,String)[0m
