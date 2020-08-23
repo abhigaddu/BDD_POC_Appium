@@ -5,8 +5,7 @@ Feature: Login to the Mobile Application
 
   Scenario: Login to Mobile Application
     When User enters the login details
-    Then User will not get an error message "Username and password did not match or not found"
-    And User will be able to see Home Page
+    Then User will be able to see Home Page
     When Access menu profile
     And Logout from the application
     Then User will be redirected back to login page
