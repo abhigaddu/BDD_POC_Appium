@@ -31,7 +31,7 @@ public class LoginStep2 {
 		caps.setCapability("deviceName", "Samsung Galaxy S9");
 		caps.setCapability("platformVersion", "10");
 		caps.setCapability("platformName", "Android");
-		caps.setCapability("app", "http://54.255.246.33/POC/pocappv1.0.apk?raw=true");
+		caps.setCapability("app", "http://54.255.246.33/POC/pocappv1.0.1.apk?raw=true");
 		driver = new AndroidDriver<MobileElement>(new URL(
 				"https://" + sauceUsername + ":" + sauceAccessKey + "@ondemand.us-west-1.saucelabs.com:443/wd/hub"),
 				caps);
