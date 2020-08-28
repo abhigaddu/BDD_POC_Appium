@@ -16,8 +16,7 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 
-public class LoginStep2 {
-	final String apkPath = "E:\\Appium_POC_specs\\pocappv1.0.apk";
+public class LoginStep {
 	final int defaultTimeout = 7;
 	AppiumDriver<MobileElement> driver;
 	public WebDriverWait wait = null;
@@ -98,6 +97,13 @@ public class LoginStep2 {
 		wait.until(
 				ExpectedConditions.visibilityOfElementLocated(By.id("tsel.www.myapplication:id/navigation_profiles")));
 		driver.findElementById("tsel.www.myapplication:id/navigation_profiles").click();
+	}
+	
+	@Then("^Access menu test data$")
+	public void Access_menu_Test_Data() throws InterruptedException {
+		wait.until(
+				ExpectedConditions.visibilityOfElementLocated(By.id("tsel.www.myapplication:id/navigation_dashboard")));
+		driver.findElementById("tsel.www.myapplication:id/navigation_dashboard").click();
 	}
 
 	@Then("^Logout from the application$")
