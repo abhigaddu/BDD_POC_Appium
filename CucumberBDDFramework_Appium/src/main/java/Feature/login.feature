@@ -17,3 +17,8 @@ Feature: Login to the Mobile Application
     Then User will be redirected back to login page
     And User will get an error message "Username and password did not match or not found"
     And Close the session
+    
+  Scenario: Invalid Server IP to Mobile Application
+    When User enters the wrong server ip but correct credentials
+    Then User will be redirected back to login page
+    And Close the session
