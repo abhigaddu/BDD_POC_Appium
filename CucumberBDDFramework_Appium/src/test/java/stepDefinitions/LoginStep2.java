@@ -43,8 +43,8 @@ public class LoginStep2 {
 	@When("^User enters the login details$")
 	public void User_enters_login_details() throws InterruptedException {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("tsel.www.myapplication:id/server")));
-		driver.findElementById("tsel.www.myapplication:id/server").sendKeys("itbsjabartsel.com");
-		driver.findElementById("tsel.www.myapplication:id/username").sendKeys("haniffaj");
+		driver.findElementById("tsel.www.myapplication:id/server").sendKeys("13.229.157.113");
+		driver.findElementById("tsel.www.myapplication:id/username").sendKeys("administrator");
 		driver.findElementById("tsel.www.myapplication:id/password").sendKeys("password");
 		driver.findElementById("tsel.www.myapplication:id/loginbtn").click();
 	}
