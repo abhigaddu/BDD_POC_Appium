@@ -6,6 +6,7 @@ Feature: Login to the Mobile Application
   Scenario: Login to Mobile Application
     When User enters the login details
     Then User will be able to see Home Page
+    And Access menu test data
     When Access menu profile
     And Logout from the application
     Then User will be redirected back to login page
