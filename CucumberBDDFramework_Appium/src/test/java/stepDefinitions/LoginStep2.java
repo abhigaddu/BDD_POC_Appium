@@ -53,7 +53,7 @@ public class LoginStep2 {
 	public void User_enters_wrong_server_details() throws InterruptedException {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("tsel.www.myapplication:id/server")));
 		driver.findElementById("tsel.www.myapplication:id/server").sendKeys("invalidserverip");
-		driver.findElementById("tsel.www.myapplication:id/username").sendKeys("haniffaj");
+		driver.findElementById("tsel.www.myapplication:id/username").sendKeys("administrator");
 		driver.findElementById("tsel.www.myapplication:id/password").sendKeys("password");
 		driver.findElementById("tsel.www.myapplication:id/loginbtn").click();
 	}
@@ -61,7 +61,7 @@ public class LoginStep2 {
 	@When("^User enters the wrong login details$")
 	public void User_enters_wrong_login_details() throws InterruptedException {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("tsel.www.myapplication:id/server")));
-		driver.findElementById("tsel.www.myapplication:id/server").sendKeys("itbsjabartsel.com");
+		driver.findElementById("tsel.www.myapplication:id/server").sendKeys("13.229.157.113");
 		driver.findElementById("tsel.www.myapplication:id/username").sendKeys("admin");
 		driver.findElementById("tsel.www.myapplication:id/password").sendKeys("pass");
 		driver.findElementById("tsel.www.myapplication:id/loginbtn").click();
