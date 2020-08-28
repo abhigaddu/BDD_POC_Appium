@@ -49,6 +49,15 @@ public class LoginStep2 {
 		driver.findElementById("tsel.www.myapplication:id/loginbtn").click();
 	}
 
+	@When("^User enters the wrong server ip but correct credentials$")
+	public void User_enters_wrong_server_details() throws InterruptedException {
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("tsel.www.myapplication:id/server")));
+		driver.findElementById("tsel.www.myapplication:id/server").sendKeys("invalidserverip");
+		driver.findElementById("tsel.www.myapplication:id/username").sendKeys("haniffaj");
+		driver.findElementById("tsel.www.myapplication:id/password").sendKeys("password");
+		driver.findElementById("tsel.www.myapplication:id/loginbtn").click();
+	}
+	
 	@When("^User enters the wrong login details$")
 	public void User_enters_wrong_login_details() throws InterruptedException {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("tsel.www.myapplication:id/server")));
